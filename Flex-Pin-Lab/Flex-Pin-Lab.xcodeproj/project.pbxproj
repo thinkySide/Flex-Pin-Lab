@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8249EF202D97E722009BDA2E /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8249EF1F2D97E722009BDA2E /* FlexLayout */; };
+		8249EF232D97E752009BDA2E /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 8249EF222D97E752009BDA2E /* PinLayout */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8249EF062D97E6C5009BDA2E /* Flex-Pin-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flex-Pin-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8249EF232D97E752009BDA2E /* PinLayout in Frameworks */,
+				8249EF202D97E722009BDA2E /* FlexLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = "Flex-Pin-Lab";
 			packageProductDependencies = (
+				8249EF1F2D97E722009BDA2E /* FlexLayout */,
+				8249EF222D97E752009BDA2E /* PinLayout */,
 			);
 			productName = "Flex-Pin-Lab";
 			productReference = 8249EF062D97E6C5009BDA2E /* Flex-Pin-Lab.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = 8249EEFD2D97E6C5009BDA2E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8249EF1E2D97E722009BDA2E /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				8249EF212D97E752009BDA2E /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8249EF072D97E6C5009BDA2E /* Products */;
 			projectDirPath = "";
@@ -335,6 +348,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8249EF1E2D97E722009BDA2E /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
+		8249EF212D97E752009BDA2E /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8249EF1F2D97E722009BDA2E /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8249EF1E2D97E722009BDA2E /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		8249EF222D97E752009BDA2E /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8249EF212D97E752009BDA2E /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8249EEFE2D97E6C5009BDA2E /* Project object */;
 }
